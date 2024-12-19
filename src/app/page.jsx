@@ -287,7 +287,7 @@ function Photos1() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-6xl font-bold text-pink-700 drop-shadow-lg">
-            margaret o.
+            margaret od.
           </h1>
         </div>
       </div>
