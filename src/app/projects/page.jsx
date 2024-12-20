@@ -8,6 +8,10 @@ import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoModero from '@/images/logos/modero_logo.svg'
+import image1 from '@/images/photos/smart_meter.jpg'
+import uncertainty from '@/images/photos/uncertainty.jpg'
+import open_phase from '@/images/photos/open-phase1.jpg'
+import mapping from '@/images/photos/mapping.png'
 
 const projects = [
   {
@@ -15,28 +19,28 @@ const projects = [
     description:
       'This work explores how monitoring voltage data at customer premises can help detect open-phase conditions in distribution transformers. Through analysis of voltage patterns, cross-household comparisons, and fault correlations, it demonstrates the potential of using consumer-level data for grid diagnostics.',
     link: { href: 'https://github.com/m0odero/open-phase-condition-transformers', label: 'github.com' },
-    logo: logoModero,
+    logo: open_phase,
   },
   {
     name: 'Communicating Uncertainty in Energy Data: Techniques and Scenarios',
     description:
       'A review of techniques for communicating uncertainty in energy data across five scenarios: power outage reporting, voltage profiles, demand response, grid frequency, and emissions estimation. Each scenario shows how proper uncertainty communication enhances decision-making in energy systems.',
     link: { href: 'https://github.com/m0odero/uncertainty_energy_data', label: 'github.com' },
-    logo: logoModero,
+    logo: uncertainty,
   },
   {
     name: 'Smart Meter Data Analytics for Households in Switzerland',
     description:
       'Smart meter data analytics on 15-minute resolution power data from households households in Switzerland as provided by a local utility company. In addition to the smart meter data, we also load temperature measurements from a nearby weather station for correlation purposes.',
     link: { href: 'https://github.com/m0odero/smart_meter_data_analytics', label: 'github.com' },
-    logo: logoModero,
+    logo: image1,
   },
   {
     name: 'Mapping Geographic Data',
     description:
       'Through my work with power grid data, I have learnt that geographic visualization reveals crucial patterns in grid performance. By mapping power quality against terrain, or socioeconomic stratifications, we can better understand how location impacts service reliability and guides infrastructure planning, hence help transforming how we approach grid modernization and renewable energy integration.',
     link: { href: 'https://github.com/m0odero/mapping_geographic_data', label: 'github.com' },
-    logo: logoModero,
+    logo: mapping,
   },
 ]
 
@@ -68,14 +72,14 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            {/* <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"> */}
               <Image
                 src={project.logo}
                 alt=""
-                className="h-8 w-8"
+                className="h-20 w-50 justify-center"
                 unoptimized
               />
-            </div>
+            {/* </div> */}
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
