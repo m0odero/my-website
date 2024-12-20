@@ -255,35 +255,48 @@ export function Header() {
         document.body.scrollHeight - window.innerHeight,
       )
 
-      if (isInitial.current) {
-        setProperty('--header-position', 'sticky')
-      }
+      // if (isInitial.current) {
+      //   setProperty('--header-position', 'sticky')
+      // }
       setProperty('--header-position', 'sticky')
-      setProperty('--header-inner-position', 'sticky')
+      setProperty('--header-inner-position', 'fixed')
 
-      setProperty('--content-offset', `${downDelay}px`)
+      // setProperty('--content-offset', `${downDelay}px`)
 
-      if (isInitial.current || scrollY < downDelay) {
-        setProperty('--header-height', `${downDelay + height}px`)
-        setProperty('--header-mb', `${-downDelay}px`)
-      } else if (top + height < -upDelay) {
-        let offset = Math.max(height, scrollY - upDelay)
-        setProperty('--header-height', `${offset}px`)
-        setProperty('--header-mb', `${height - offset}px`)
-      } else if (top === 0) {
-        setProperty('--header-height', `${scrollY + height}px`)
-        setProperty('--header-mb', `${-scrollY}px`)
+      // Set a fixed height for the header
+      setProperty('--header-height', '4rem') // 64px
+
+      // Ensure the header stays at top
+      setProperty('--header-top', '0px')
+
+      // Remove any margin bottom to prevent jumping
+      setProperty('--header-mb', '0px')
+
+      if (isHomePage) {
+        setProperty('--content-offset', `${downDelay}px`)
       }
 
-      if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
-        setProperty('--header-inner-position', 'fixed')
-        removeProperty('--header-top')
-        removeProperty('--avatar-top')
-      } else {
-        removeProperty('--header-inner-position')
-        setProperty('--header-top', '0px')
-        setProperty('--avatar-top', '0px')
-      }
+      // if (isInitial.current || scrollY < downDelay) {
+      //   setProperty('--header-height', `${downDelay + height}px`)
+      //   setProperty('--header-mb', `${-downDelay}px`)
+      // } else if (top + height < -upDelay) {
+      //   let offset = Math.max(height, scrollY - upDelay)
+      //   setProperty('--header-height', `${offset}px`)
+      //   setProperty('--header-mb', `${height - offset}px`)
+      // } else if (top === 0) {
+      //   setProperty('--header-height', `${scrollY + height}px`)
+      //   setProperty('--header-mb', `${-scrollY}px`)
+      // }
+
+      // if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
+      //   setProperty('--header-inner-position', 'fixed')
+      //   removeProperty('--header-top')
+      //   removeProperty('--avatar-top')
+      // } else {
+      //   removeProperty('--header-inner-position')
+      //   setProperty('--header-top', '0px')
+      //   setProperty('--avatar-top', '0px')
+      // }
     }
 
     function updateAvatarStyles() {
