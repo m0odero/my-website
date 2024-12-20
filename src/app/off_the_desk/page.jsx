@@ -31,7 +31,7 @@ import crochet_image4 from '@/images/photos/crochet004.jpg'
 import clsx from 'clsx'
 import Image from 'next/image'
 
-function ToolsSection({ children, ...props }) {
+function ToolsSection({children, ...props }) {
   return (
     <Section {...props}>
       <ul role="list" className="space-y-16">
@@ -64,30 +64,45 @@ export default function OffDesk() {
       intro="Here, I share the activities that bring balance (and joy) to my life, from hiking and marathons to kitchen gardening, crochet, and African fiction. These passions challenge me physically, mentally, and creatively, offering both inspiration and personal growth while helping me maintain a well-rounded perspective.."
     >
       <div className="space-y-20">
-        <ToolsSection title="High-altitude mountaineering">
+      <ToolsSection
+          title={
+            <span style={{ color: '#be185d', fontWeight: 'bold' }}>
+              High altitude mountaineering
+            </span>
+            }>
         Hiking began as a way to connect socially as a work-from-home person but has grown into a personal challenge and a source of deep fulfillment. I’ve summited two of Africa’s highest peaks—Kilimanjaro and Mount Kenya—experiences that pushed my mental and physical boundaries while leaving me in awe of nature’s grandeur. Now, I dream of climbing Ruwenzori, The Virungas, and Oldoinyo Lengai—the world’s only active carbonatite volcano. Beyond Africa, the thought of exploring trails on other continents excites me, blending my love of adventure with a desire to see the world’s beauty. Each hike reminds me that life’s most rewarding journeys often begin with a single step and an open mind. And I am a summit-seeker, its's not only about the journey :)
 
         </ToolsSection>
         <PhotosHiking />
-        <ToolsSection title="Wannabe marathoner">
+        <ToolsSection
+          title={
+            <span style={{ color: '#be185d', fontWeight: 'bold' }}>
+              Wannabe marathoner
+            </span>
+            }>
 
         I know I’ll never be Kipchoge, but there’s something about marathoning that keeps me coming back. Maybe it’s the thrill of wearing the same T-shirt as thousands of others, the joy of collecting finisher medals, or just being part of something bigger than myself. I’ve run the Nairobi City Marathon and Stanchart Marathons, even once attempting a dusk-to-dawn marathon—though I didn’t quite make it to dawn (but no regrets here!). For me, it’s not about breaking records but about the joy of showing up, pushing my limits, and embracing the camaraderie that comes with every race.
         </ToolsSection>
         <PhotosMarathon />
-        <ToolsSection title="Plant-mom, but I eat my babies :)">
-        Despite having faux-plants all over my house, I find real joy in my kitchen garden, where I grow more edible vegetables than flowers. Gardening is my way of slowing down and caring for something simple and alive. I realized that my need to have a kitchen garden is deeply connected to wanting to hold onto a channel of connection to my mother, who always had a knack for growing things. I get surprisingly attached to every plant, feeling a sense of pride when they thrive and a small sense of loss when they don’t. Rosemary has become my stubborn challenge, refusing to grow the way I expect, while mint is taking over the garden, spreading so fast it’s practically setting up its own empire. Gardening reminds me that life, like plants, is full of growth, mess, and small victories.
+        <ToolsSection
+          title={
+            <span style={{ color: '#be185d', fontWeight: 'bold' }}>
+              Plant-mom, but I eat my babies :)
+            </span>
+            }>
+          Despite having faux-plants all over my house, I find real joy in my kitchen garden, where I grow more edible vegetables than flowers. Gardening is my way of slowing down and caring for something simple and alive. I realized that my need to have a kitchen garden is deeply connected to wanting to hold onto a channel of connection to my mother, who always had a knack for growing things. I get surprisingly attached to every plant, feeling a sense of pride when they thrive and a small sense of loss when they don’t. Rosemary has become my stubborn challenge, refusing to grow the way I expect, while mint is taking over the garden, spreading so fast it’s practically setting up its own empire. Gardening reminds me that life, like plants, is full of growth, mess, and small victories.
         </ToolsSection>
         <PhotosGardening />
-        <ToolsSection title="Crochet">
+        <ToolsSection
+          title={
+            <span style={{ color: '#be185d', fontWeight: 'bold' }}>
+              Hook and yarn
+            </span>
+            }>
         Crochet is something I first learned when I was probably younger than 10, but I didn’t really stick with it at the time. When I picked up yarn again in my mid-twenties, the craft was still intact—some things just can’t be erased from memory, especially those learned in childhood. The rhythmic motion of the hook in my hand feels like an old friend, grounding me in the present while connecting me to my younger self. Crochet is a form of creative escape, a way to make something tangible with my hands, and a reminder that skills, like memories, have a way of staying with you even when you least expect it.
         </ToolsSection>
         <PhotosCrochet />
-        {/* <ToolsSection title="African Fiction">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
-        </ToolsSection>
-        <Photos /> */}
+
       </div>
     </SimpleLayout>
   )
