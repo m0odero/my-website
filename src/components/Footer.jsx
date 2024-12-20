@@ -20,19 +20,37 @@ function NavLink({ href, children }) {
   )
 }
 
+// function SocialLink({ className, href, children, icon: Icon }) {
+//   return (
+//     <li className={clsx(className, 'flex')}>
+//       <Link
+//         href={href}
+//         className="group flex text-sm font-medium text-zinc-800 transition hover:text-pink-700 dark:text-pink-700 dark:hover:text-pink-700"
+//       >
+//         <Icon className="h-6 w-6 flex-none fill-pink-700 transition group-hover:fill-pink-700" />
+//         <span className="ml-4">{children}</span>
+//       </Link>
+//     </li>
+//   )
+// }
+
+
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-pink-700 dark:text-pink-700 dark:hover:text-pink-700"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <Icon className="h-6 w-6 flex-none fill-pink-700 transition group-hover:fill-pink-700" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
+  );
 }
+
 
 export function Footer() {
   return (
@@ -50,7 +68,11 @@ export function Footer() {
               </div>
               <div className="lg:pl-20">
                 <ul role="list" className="flex flex-row gap-4">
-                  <SocialLink href="https://x.com/__modero?s=21&t=KWiAJlbkUgmDsS8JqLJ3lQ" icon={XIcon} className="mt-4">
+                  <SocialLink
+                    href="https://x.com/__modero?s=21&t=KWiAJlbkUgmDsS8JqLJ3lQ"
+                    icon={XIcon}
+                    className="mt-4" target="_blank"
+                    rel="noopener noreferrer">
                   </SocialLink>
                   <SocialLink href="https://www.instagram.com/_modero/profilecard/?igsh=MWk3NzJhdWMyMHdkbw==" icon={InstagramIcon} className="mt-4">
                   </SocialLink>
