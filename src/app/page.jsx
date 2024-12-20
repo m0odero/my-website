@@ -16,7 +16,7 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-2.jpg'
+import image1 from '@/images/photos/gardening003.JPG'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
@@ -113,10 +113,10 @@ function Newsletter() {
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
+        <span className="ml-3">Contact me</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
+        Send me a message via email.
       </p>
       <div className="mt-6 flex">
         <input
@@ -127,7 +127,7 @@ function Newsletter() {
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-pink-700 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10"
         />
         <Button type="submit" className="ml-4 flex-none">
-          Join
+          Send
         </Button>
       </div>
     </form>
@@ -207,10 +207,11 @@ function Resume() {
   ]
 
   let technicalSkills = {
-    'Data Analysis': 'Pandas, NumPy, SciPy, Geopandas, Shapely',
-    'Data Visualization': 'Matplotlib, Seaborn, Plotly, Power BI, Tableau',
-    'Machine Learning': 'scikit-learn, TensorFlow, Keras, PyTorch',
-    'Big Data': 'PySpark, Databricks, Hadoop',
+    'Data Analysis': 'Pandas, NumPy, SQL, Geopandas, Shapely',
+    'Data Viz': 'Matplotlib, Seaborn, Plotly, Goeopandas, Grafana',
+    'Machine Learning': 'scikit-learn, scipy, Keras, PyTorch',
+    'Deployment & CI/CD': 'Docker, Travis, CircleCI, GitHub',
+    'Big Data': 'PySpark, Databricks'
   }
 
   return (
@@ -239,7 +240,7 @@ function Resume() {
           ))}
         </div>
       </div>
-      <Button href="public/margaret_odero_CV.pdf" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://drive.google.com/file/d/1YvZ-x1FMWWeYBGcckIE4eM7XjOTsHlAV/view?usp=drive_link" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -248,10 +249,19 @@ function Resume() {
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = ['rotate-3', '-rotate-3', 'rotate-3', 'rotate-3', '-rotate-3']
 
   return (
     <div className="mt-16 sm:mt-20">
+      <div className="relative z-10 items-center justify-center h-full py-10">
+        <h1 className="text-center text-4xl font-bold tracking-tight text-pink-700 sm:text-5xl dark:text-pink-700">
+            margaret o.
+        </h1>
+        <p className="mt-6 text-center text-l text-zinc-600 dark:text-zinc-400 font-sans">
+          <em>The walls between art and engineering exist only in our minds -- Theo Jansen </em>
+        </p>
+      </div>
+
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
@@ -289,6 +299,9 @@ function Photos1() {
           <h1 className="text-6xl font-bold text-pink-700 drop-shadow-lg">
             margaret od.
           </h1>
+          <h3>
+          The walls between art and engineering exist only in our minds -- Theo Jansen
+          </h3>
         </div>
       </div>
     </div>
@@ -300,7 +313,7 @@ export default async function Home() {
 
   return (
     <>
-      <Photos1 />
+      <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
@@ -323,7 +336,7 @@ export default async function Home() {
           Hey there! I’m Margaret, a data scientist with a spark for power systems.
           With my unique blend of electrical engineering expertise and data science wizardry, I’m working to make our energy grids smarter, more reliable, and accessible to all. I also love life dynamically and like taking on thrilling chalenges. Currently interested in high-altitude hiking, wannbe marathoning, African fiction, crochet, gardening, and financial freedom.
           </p> */}
-          <div className="mt-6 flex gap-6 flex justify-center">
+          {/* <div className="mt-6 flex gap-6 flex justify-center">
             <SocialLink href="https://x.com/__modero?s=21&t=KWiAJlbkUgmDsS8JqLJ3lQ" aria-label="Follow on X" icon={XIcon} />
             <SocialLink
               href="https://www.instagram.com/_modero/profilecard/?igsh=MWk3NzJhdWMyMHdkbw=="
@@ -340,7 +353,7 @@ export default async function Home() {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-          </div>
+          </div> */}
         </div>
       </Container>
     </>
