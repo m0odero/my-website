@@ -63,7 +63,7 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
             When Les Brown said "Live full, die empty", it felt like a quiet nudge to how I aspire
-            to live my life. I’m Margaret, a data scientist with a spark for power systems. With my
+            to live my life. I’m Margaret, a data scientist with a background in for power systems. With my
             unique blend of electrical engineering expertise and data science edge, I’m working
             to make our energy grids smarter, more reliable, and accessible to all. But my passion
             doesn’t end at my desk. When I feel convicted to do something, I dive in fully—whether
@@ -80,29 +80,6 @@ export default function About() {
             conquer adds richness to the story I’m writing with my life.
             </p>
           </div>
-        </div>
-        <div className="lg:pl-20">
-          <ul role="list">
-            <SocialLink href="https://x.com/__modero?s=21&t=KWiAJlbkUgmDsS8JqLJ3lQ" icon={XIcon}>
-              follow on X
-            </SocialLink>
-            <SocialLink href="https://www.instagram.com/_modero/profilecard/?igsh=MWk3NzJhdWMyMHdkbw==" icon={InstagramIcon} className="mt-4">
-              follow on Instagram
-            </SocialLink>
-            <SocialLink href="https://github.com/m0odero" icon={GitHubIcon} className="mt-4">
-              follow on GitHub
-            </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/margaret-odero/" icon={LinkedInIcon} className="mt-4">
-              follow on LinkedIn
-            </SocialLink>
-            {/* <SocialLink
-              href="margaretodero59@gmail.com"
-              icon={MailIcon}
-              className="mt-8 border-t border-zinc-200 pt-8 dark:border-zinc-700/40"
-            >
-              margaretodero59@gmail.com
-            </SocialLink> */}
-          </ul>
         </div>
       </div>
     </Container>
