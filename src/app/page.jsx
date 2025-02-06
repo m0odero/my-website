@@ -207,9 +207,9 @@ function Resume() {
   ]
 
   let technicalSkills = {
-    'Data Analysis': 'Pandas, NumPy, SQL, Geopandas, Shapely',
+    'Data Analysis and Machine Learning': 'Pandas, NumPy, SQL, Geopandas, Shapely, scikit-learn, scipy',
     'Data Visualization': 'Matplotlib, Seaborn, Plotly, Folium, Grafana',
-    'Machine Learning': 'Scikit-learn, Scipy',
+    'Mathematics and Statistics': 'Mathematical Modeling, Predictive Analytics, Statistical Testing',
     'Deployment & CI/CD': 'Docker, Travis, CircleCI, GitHub',
     'Big Data': 'PySpark, Databricks'
   }

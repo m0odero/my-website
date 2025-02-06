@@ -141,7 +141,7 @@ function NavItem({ href, children }) {
       >
         {children}
         {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-pink-700/0 via-pink-700/40 to-pink-700/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-pink-700/0 via-pink-700/40 to-pink-700/0 dark:from-pink-700/0 dark:via-pink-700/40 dark:to-pink-700/0" />
         )}
       </Link>
     </li>
