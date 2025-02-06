@@ -1,6 +1,6 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
-import thumbnail from '@/images/photos/image-4.jpg'
+// import thumbnail from '@/images/photos/image-4.jpg'
 
 import '@/styles/tailwind.css'
 
