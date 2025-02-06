@@ -4,6 +4,12 @@ import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
 function Article({ article }) {
+  // Get the current date to compare with the article's date
+  const currentDate = new Date()
+  const articleDate = new Date(article.date)
+
+  // Check if the article date is in the future
+  const isComingSoon = articleDate > currentDate
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
@@ -19,7 +25,8 @@ function Article({ article }) {
           {formatDate(article.date)}
         </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
-        <Card.Cta>Read article</Card.Cta>
+        <Card.Cta>{isComingSoon ? 'Coming soon' : 'Read article'}</Card.Cta>
+        {/* <Card.Cta>Read article</Card.Cta> */}
       </Card>
       <Card.Eyebrow
         as="time"
@@ -35,7 +42,7 @@ function Article({ article }) {
 export const metadata = {
   title: 'Articles',
   description:
-    'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+    'A documentation of my learning journey and insights gained from years at the intersection of power systems and data science.',
 }
 
 export default async function ArticlesIndex() {
