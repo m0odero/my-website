@@ -1,6 +1,6 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
-// import thumbnail from '@/images/photos/image-4.jpg'
+import thumbnail from '@/images/photos/image-4.jpg'
 
 import '@/styles/tailwind.css'
 
@@ -17,29 +17,29 @@ export const metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
-  // openGraph: {
-  //   title: 'margaret o',
-  //   description:
-  //     'Hi, I\'m Margaret! I work with power systems data, making sense of grids and how they impact our lives.',
-  //   url: process.env.NEXT_PUBLIC_SITE_URL,
-  //   siteName: 'margaret o',
-  //   images: [
-  //     {
-  //       url: thumbnail,
-  //       width: 1200,
-  //       height: 630,
-  //       alt: 'Margaret O Thumbnail',
-  //     },
-  //   ],
-  //   type: 'website',
-  // },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'margaret o',
-  //   description:
-  //     'Hi, I\'m Margaret! I work with power systems data, making sense of grids and how they impact our lives.',
-  //   images: [thumbnail],
-  // },
+  openGraph: {
+    title: 'margaret o',
+    description:
+      'Hi, I\'m Margaret! I work with power systems data, making sense of grids and how they impact our lives.',
+    url: process.env.NEXT_PUBLIC_SITE_URL,
+    siteName: 'margaret o',
+    images: [
+      {
+        url: '@/images/photos/image-4.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Margaret O Thumbnail',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'margaret o',
+    description:
+      'Hi, I\'m Margaret! I work with power systems data, making sense of grids and how they impact our lives.',
+    images: ['@/images/photos/image-4.jpg'],
+  },
 }
 
 export default function RootLayout({ children }) {
