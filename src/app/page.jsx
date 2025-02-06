@@ -98,7 +98,7 @@ function Article({ article }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>{isComingSoon ? 'Coming soon' : 'Read article'}</Card.Cta>
+      <Card.Cta>{isComingSoon ? 'Coming soon...' : 'Read article'}</Card.Cta>
     </Card>
   )
 }
