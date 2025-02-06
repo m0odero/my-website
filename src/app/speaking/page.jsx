@@ -32,7 +32,7 @@ export const metadata = {
 export default function Speaking() {
   return (
     <SimpleLayout
-      title="knoledge sharing - speech and text."
+      title="knowledge sharing - speech and text."
       intro="These are spaces I have contributed to through speaking or writing that are external to this website"
     >
       <div className="space-y-20">
