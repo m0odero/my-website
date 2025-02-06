@@ -83,6 +83,12 @@ function ArrowDownIcon(props) {
 }
 
 function Article({ article }) {
+  // Get the current date to compare with the article's date
+  const currentDate = new Date()
+  const articleDate = new Date(article.date)
+
+  // Check if the article date is in the future
+  const isComingSoon = articleDate > currentDate
   return (
     <Card as="article">
       <Card.Title href={`/articles/${article.slug}`}>
@@ -92,7 +98,7 @@ function Article({ article }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>{isComingSoon ? 'Coming soon' : 'Read article'}</Card.Cta>
     </Card>
   )
 }
@@ -309,7 +315,11 @@ function Photos1() {
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 2)
+  // let articles = (await getAllArticles()).slice(0, 2)
+  let articles = [
+    ...(await getAllArticles()).slice(-1),  // Last article
+    ...(await getAllArticles()).slice(0, 1)     // First article
+  ]
 
   return (
     <>
