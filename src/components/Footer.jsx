@@ -63,7 +63,7 @@ export function Footer() {
                 <NavLink href="/about">about</NavLink>
                 <NavLink href="/projects">projects</NavLink>
                 <NavLink href="/articles">articles</NavLink>
-                {/* <NavLink href="/speaking">Speaking</NavLink> */}
+                <NavLink href="/publications and speaking">publications and speaking</NavLink>
                 <NavLink href="/off_the_desk">off the clock</NavLink>
               </div>
               <div className="lg:pl-20">
