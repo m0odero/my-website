@@ -1,7 +1,10 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 
-
-import image2 from '@/images/photos/image-2.jpg'
+import image1 from '@/images/photos/welcome_fig1.jpg'
+import image2 from '@/images/photos/welcome_fig2.png'
+import image3 from '@/images/photos/welcome_fig3.png'
+import image4 from '@/images/photos/welcome_fig4.jpg'
+import image5 from '@/images/photos/welcome_fig5.JPG'
 
 export const article = {
   author: 'Margaret Odero',
@@ -19,28 +22,38 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
+<figure>
+  <img src={image1.src} alt="Picture from a retro-themed party." width="400" height="200" />
+  <figcaption>Fig 1: Picture from a retro-themed party.</figcaption>
+</figure>
 
 After years of dreaming, planning, and more self-nudges than I’d like to admit, this project is finally live! This website is my step out of my comfort zone—an attempt to share my blend of the technical, the reflective, and the personal journey I’ve been on for years.  Here, I’m sharing more than just insights; I’m sharing pieces of my journey and lessons that I’ve taken with me along the way. I’ve spent years immersed in the worlds of data analytics, visualization, and data science, with a particular focus on energy and power systems. But this space isn’t just about numbers and power systems analysis—it’s about articulating insights, learning what already is, exploring new possibilities, and sometimes pushing the limits to unearth unanswered questions. It’s also about documenting aspects of my interests that complete the person that I am beyond numbers and tech. I believe that sharing my work, ideas, and learning journey here does not just let others in; it makes me sharper, clearer, and more insightful.
 
-<img src={image2.src} alt="A set of logical scenarios in testing an algorithm for power outage detection." />
 <figure>
-  <img src={image2.src} alt="A set of logical scenarios in testing an algorithm for power outage detection." width="800" height="500" />
-  <figcaption>A set of logical scenarios in testing an algorithm for power outage detection..</figcaption>
+  <img src={image2.src} alt="A set of logical scenarios in testing an algorithm for power outage detection." width="400" height="200" />
+  <figcaption>Fig 2: A set of logical scenarios in testing an algorithm for power outage detection.</figcaption>
 </figure>
-
-_*Fig 2: A set of logical scenarios in testing an algorithm for power outage detection.*_
 
 
 As a data scientist, my work is built on the foundations of statistics, data science, visualization, and power systems. In every project, I strive to bring the rigor of scientific principles to real-world applications—whether I'm finding insights in energy data or making complex datasets easier to understand through visualization. What fascinates me is seeing how these fields work together: the way statistics reveals hidden patterns, how good visualization makes complex ideas click, and how understanding power systems helps shape better policies. Programming brings all these pieces together in my work, as I dig into everything from the technical working of the grid to the contextualization of energy within economics, policy, and governance.
 
-A mug I received from KamiLimu, a tech mentorship programme, where I was a judge during the tech entrepreneurship pitches in Cohort 8.
+<figure>
+  <img src={image3.src} alt="A mug I received from KamiLimu, a tech mentorship programme, where I was a judge during the tech entrepreneurship pitches in Cohort 8." width="400" height="200" />
+  <figcaption>Fig 3: A mug I received from KamiLimu, a tech mentorship programme, where I was a judge during the tech entrepreneurship pitches in Cohort 8.</figcaption>
+</figure>
 
 Beyond the technical, this platform also gives a glimpse into some passions I hold dear to my heart. I’ve found that the essence of my work is the same as that of my personal passions. Hiking and (wannabe) marathoning mirror my professional drive: there’s always a new peak to reach, another stretch of the trail to discover. Hiking and marathoning began as a way to connect socially but has grown into a personal challenge and a source of deep fulfillment. I’ve summited two of Africa’s highest peaks—Kilimanjaro and Mount Kenya—experiences that pushed my mental and physical boundaries while leaving me in awe of nature’s grandeur. I’ll be sharing my experiences as I continue to conquer more of the world’s highest summits. Also, I am a summit-seeker. For me, it's not only about the journey, as most hikers say :)
 
-Summit of Lion Head Mountain, Cape Town, South Africa
+<figure>
+  <img src={image4.src} alt="Summit of Lion Head Mountain, Cape Town, South Africa." width="400" height="200" />
+  <figcaption>Fig 4: Summit of Lion Head Mountain, Cape Town, South Africa.</figcaption>
+</figure>
 
 Crochet and gardening have taught me patience and the value of every detail, whether it’s in the intricate designs of a stitch or the care needed to help a plant grow. I first learned crochet when I was probably younger than 10, but I didn’t really stick with it at the time. When I picked up yarn again in my mid-twenties, the craft was still intact—some things just can’t be erased from memory, especially those learned in childhood. While I’m currently on a crochet hiatus, I know I will always be back, because this feels like home. While on this crochet hiatus, I’m currently obsessed with my kitchen garden. I realized that my need to have a kitchen garden is deeply connected to wanting to hold onto a channel of connection to my mother, who always had a knack for growing things. Gardening is my way of slowing down and caring for something simple and alive, and in this website, I document a bit about the exciting things in my garden.
 
-Zebra Rocks, Mt. Kilimanjaro (~4200m asl)
+<figure>
+  <img src={image5.src} alt="Zebra Rocks, Mt. Kilimanjaro (~4200m asl)." width="400" height="200" />
+  <figcaption>Fig 5: Zebra Rocks, Mt. Kilimanjaro (~4200m asl).</figcaption>
+</figure>
 
 While this whole website is a fulfilled promise from me to me, I hope you can pick pieces of it that resonate with you, and, hopefully, stay tuned for a memoir to follow!
