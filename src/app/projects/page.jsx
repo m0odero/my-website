@@ -18,28 +18,32 @@ const projects = [
     name: 'Open-phase Condition in Distribution Transformers',
     description:
       'This work explores how monitoring voltage data at customer premises can help detect open-phase conditions in distribution transformers. Through analysis of voltage patterns, cross-household comparisons, and fault correlations, it demonstrates the potential of using consumer-level data for grid diagnostics.',
-    link: { href: 'https://github.com/m0odero/open-phase-condition-transformers', label: 'github.com' },
+    // link: { href: 'https://github.com/m0odero/open-phase-condition-transformers', label: 'github.com' },
+    link: { href: '#', label: 'will be available on github.com soon' },
     logo: open_phase,
   },
   {
     name: 'Communicating Uncertainty in Energy Data: Techniques and Scenarios',
     description:
       'A review of techniques for communicating uncertainty in energy data across five scenarios: power outage reporting, voltage profiles, demand response, grid frequency, and emissions estimation. Each scenario shows how proper uncertainty communication enhances decision-making in energy systems.',
-    link: { href: 'https://github.com/m0odero/uncertainty_energy_data', label: 'github.com' },
+    // link: { href: 'https://github.com/m0odero/uncertainty_energy_data', label: 'github.com' },
+    link: { href: '#', label: 'will be available on github.com soon' },
     logo: uncertainty,
   },
   {
     name: 'Smart Meter Data Analytics for Households in Switzerland',
     description:
       'Smart meter data analytics on 15-minute resolution power data from households households in Switzerland as provided by a local utility company. In addition to the smart meter data, we also load temperature measurements from a nearby weather station for correlation purposes.',
-    link: { href: 'https://github.com/m0odero/smart_meter_data_analytics', label: 'github.com' },
+    // link: { href: 'https://github.com/m0odero/smart_meter_data_analytics', label: 'github.com' },
+    link: { href: '#', label: 'will be available on github.com soon' },
     logo: image1,
   },
   {
-    name: 'Mapping Geographic Data',
+    name: 'Mapping Geographic Energy Data',
     description:
       'Through my work with power grid data, I have learnt that geographic visualization reveals crucial patterns in grid performance. By mapping power quality against terrain, or socioeconomic stratifications, we can better understand how location impacts service reliability and guides infrastructure planning, hence help transforming how we approach grid modernization and renewable energy integration.',
-    link: { href: 'https://github.com/m0odero/mapping_geographic_data', label: 'github.com' },
+    // link: { href: 'https://github.com/m0odero/mapping_geographic_data', label: 'github.com' },
+    link: { href: '#', label: 'will be available on github.com soon' },
     logo: mapping,
   },
 ]
